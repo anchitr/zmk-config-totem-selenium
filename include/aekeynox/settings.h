@@ -41,7 +41,7 @@
 // Some keyboard layouts and shortcuts may vary between Windows / macOS / Linux.
 // Uncomment one of the following lines if the host computer doen't run Windows.
 
-// #define MACOS
+#define MACOS
 // #define LINUX
 
 
@@ -105,7 +105,7 @@
 // Uncomment one of the following lines to pick your preferred hold-tap config.
 
 // #define HT_NONE
-// #define HT_THUMB_TAPS
+#define HT_THUMB_TAPS
 // #define HT_HOME_ROW_MODS  // (default behavior)
 // #define HT_TWO_THUMB_KEYS
 
@@ -144,7 +144,7 @@
 //  + Escape under the left thumb (direct access)
 // Highly recommended for Vim users, obviously. :-)
 
-// #define VIM_NAVIGATION
+#define VIM_NAVIGATION
 
 // [Experimental]
 // Uncomment the following line to enable the Callum variant of the previous

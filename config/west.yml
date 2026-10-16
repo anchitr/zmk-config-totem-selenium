@@ -8,7 +8,6 @@
 #   open a PR to update this hash if improvements are made.
 
 manifest:
-
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -20,17 +19,24 @@ manifest:
       url-base: https://github.com/rloutier
     - name: rschenk
       url-base: https://github.com/rschenk
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
 
   projects:
-      # We rely on a fork of ZMK for a couple of reasons:
-      # 1. to pin the version of ZMK, so we’re not caught off guard by breaking changes
-      # 2. to add some more advanced features that aren’t present upstream
-      #    (unmerged PRs, custom patches…)
-      # More info on the changes present can be found on the fork’s README page.
+    # We rely on a fork of ZMK for a couple of reasons:
+    # 1. to pin the version of ZMK, so we’re not caught off guard by breaking changes
+    # 2. to add some more advanced features that aren’t present upstream
+    #    (unmerged PRs, custom patches…)
+    # More info on the changes present can be found on the fork’s README page.
     - name: zmk
       remote: NuclearSquid
       revision: aekeynox
       import: app/west.yml
+
+    # Prospector dongle display (Zephyr 4.1 / current-ZMK branch)
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: feat/new-status-screen
 
       ###
       # Custom behaviors
