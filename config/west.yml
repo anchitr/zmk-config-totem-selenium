@@ -36,7 +36,7 @@ manifest:
     # Prospector dongle display (Zephyr 4.1 / current-ZMK branch)
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: feat/new-status-screen
+      revision: feat/new-status-screens
 
       ###
       # Custom behaviors
