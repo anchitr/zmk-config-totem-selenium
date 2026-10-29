@@ -41,7 +41,12 @@
 // Some keyboard layouts and shortcuts may vary between Windows / macOS / Linux.
 // Uncomment one of the following lines if the host computer doen't run Windows.
 
+// A keymap may define LINUX before including Selenium to override this
+// per keyboard (see config/cradio.keymap).
+
+#ifndef LINUX
 #define MACOS
+#endif
 // #define LINUX
 
 
